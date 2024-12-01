@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% block head %}{% endblock head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrashTrack | {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .content-container{
+            min-height:35vh;
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TRASHTRACK</div>
+        <ul class="nav-links">
+            <li><a href="{% url "dashboard" %}">Home</a></li>
+            <li><a href="{% url "smart_bins" %}">Bin Monitoring</a></li>
+            <li><a href="{% url "tracking" %}">Tracking</a></li>
+            <li><a href="{% url "dumping_area" %}">Dumping area</a></li>
+            <li><a href="{% url "company_portal" %}">Company Portal</a></li>
+            <li><a href="{% url "map_view" %}">Bin Map</a></li>
+        </ul>
+        <div id="cont"><a target="_blank" id="cont" href="{% url "admin:login" %}">login</a></div>
+    </nav>
+
+    <div class="content-container">
+    {% block content %}{% endblock content %}
+    </div>
+    <!-- Footer -->
+    <Footer class="f1">
+       <div class="info">
+        <h4 class="logo">TRASH <br> TRACK</h4>
+        <div class="line">.</div>
+        <h4 class="h4">Trashtack optimizes waste management <br>with real-time data, reducing emissions <br>and supporting greener communities.</h4>
+       </div>
+       <div class="srl">
+        <h3>TT SRL</h3>
+        <h4>Via Lunga, 51/B <br>
+            25126 Brescia (BS) <br>
+            Italy</h4>
+       </div>
+       <div class="llc">
+        <h3>TT MONITORING LLC</h3>
+        <h4>400 SR 434, Ste. <br>1024,
+            Oviedo, FL 32765 <br>
+            USA</h4>
+       </div>
+    </Footer>
+    <Footer class="f2">
+            <ul class="fnav">
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+    </Footer>
+    <footer>
+        <p>&copy; 2024 trashtrack. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

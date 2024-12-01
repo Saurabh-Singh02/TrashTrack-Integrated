@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Dumping Area{% endblock title %}
+{% block content %}
+<section>
+    <h1>Dumping Area</h1>
+    <h2>Waste Types in Dumping Area</h2>
+    <div class="waste-list">
+        {% for waste_type in waste_types %}
+        <div class="waste-type">
+            <h3>{{ waste_type.waste_type }}</h3>
+            <p>Quantity: {{ waste_type.quantity }} kg</p>
+            <p>Last Updated: {{ waste_type.last_updated }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock content %}
+

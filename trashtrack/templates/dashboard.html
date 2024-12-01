@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}  <!-- Load the static template tag -->
+{% block title %}Home{% endblock title %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="Background">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="{% static 'home_vid.mp4' %}" type="video/mp4">  <!-- Update video source -->
+        </video>
+        <div class="bg-content">
+            <h1>SMART WASTE MANAGEMENT SYSTEM</h1>
+            <p>“Redefining Waste with Intelligence, for a Cleaner, Greener World”</p>
+            <a href="{% static 'contact.html' %}">Click here</a>  <!-- Update link to contact page -->
+        </div>
+        <img src="{% static 'pattern.png' %}" alt="">  <!-- Update image source -->
+        <img class="P2" src="{% static 'pattern.png' %}" alt="">  <!-- Update image source -->
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>MORE THAN 400 TONS CO2 SAVED WITH</h2>
+    </section>
+
+    <section class="Section2">
+        <div class="container">
+            <h2>TRASHTRACK</h2>
+            <p>
+                "Trashtack is an innovative waste management and monitoring platform designed to <br> transform waste collection and transportation through data-driven insights and <br> predictive analytics. By utilizing real-time data and smart forecasting, Trashtack <br>
+                helps you achieve sustainability goals, lower carbon emissions, and minimize <br>environmental impact—empowering cities and businesses to create cleaner, greener <br>communities."
+            </p>
+            <img src="{% static 'aboutimg.png' %}" alt="">  <!-- Update image source -->
+            <!--<a href="#">View More</a>-->
+        </div>
+        <div class="info">
+            <img src="{% static 'pattern2.png' %}" alt="">  <!-- Update image source -->
+            <h2>WE ARE COLLECTING THE WASTE SMARTLY TO MAKE FUTURE GREEN!</h2>
+        </div>
+        <div class="bins">
+            <div class="green">
+                <h2>Smart <br> Bins</h2>
+            </div>
+            <img src="{% static 'bins.png' %}" alt="">  <!-- Update image source -->
+            <div class="text">
+                <p>"Trashtack is an innovative waste management and monitoring platform designed to <br> transform waste collection and transportation through data-driven insights and <br> predictive analytics. By utilizing real-time data and smart forecasting, Trashtack <br>
+                    helps you achieve sustainability goals, lower carbon emissions, and minimize <br>environmental impact—empowering cities and businesses to create cleaner, greener <br>communities."</p>
+            </div>
+        </div>
+        <div class="tracking">
+            <div class="text">
+                <p>"Trashtack is an innovative waste management and monitoring platform designed to <br> transform waste collection and transportation through data-driven insights and <br> predictive analytics. By utilizing real-time data and smart forecasting, Trashtack <br>
+                    helps you achieve sustainability goals, lower carbon emissions, and minimize <br>environmental impact—empowering cities and businesses to create cleaner, greener <br>communities."</p>
+            </div>
+            <img src="{% static 'map.png' %}" alt="">  <!-- Update image source -->
+            <div class="green">
+                <h2>Route<br>Tracking</h2>
+            </div>
+        </div>
+        <div class="reusability">
+            <div class="green">
+                <h2>Smart <br> Bins</h2>
+            </div>
+            <img src="{% static 'veh.png' %}" alt="">  <!-- Update image source -->
+            <div class="text">
+                <p>"Trashtack is an innovative waste management and monitoring platform designed to <br> transform waste collection and transportation through data-driven insights and <br> predictive analytics. By utilizing real-time data and smart forecasting, Trashtack <br>
+                    helps you achieve sustainability goals, lower carbon emissions, and minimize <br>environmental impact—empowering cities and businesses to create cleaner, greener <br>communities."</p>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <h2>WE CAN HELP YOUR<br>COMPANY TO</h2>
+        <div class="money">
+            <h3>Save Money</h3>
+            <h4>Saving up to 40% <br> on logistics costs</h4>
+        </div>
+        <div class="time">
+            <img src="{% static 'time_image.png' %}" alt="">  <!-- Update image source -->
+            <h3>Save Time</h3>
+            <h4>Simplifying your daily <br> activities</h4>
+        </div>
+        <div class="carbon">
+            <h3>Reduce your carbon <br>footprint</h3>
+            <h4>Lowering CO2 emissions <br> up to 30%</h4>
+        </div>
+    </section>
+    
+    <section class="section4">
+        <div class="explore"> 
+            <img src="{% static 'pattern2.png' %}" alt="">  <!-- Update image source -->
+            <h2>EXPLORE</h2>
+            <div class="Ecard">
+                <div class="c1">
+                    <div class="card1">
+                        <div class="text">
+                            <h3>Card 1</h3>
+                        </div>
+                    </div>
+                    <a href="{% static 'contact.html' %}" class="button">Click here</a>  <!-- Update link to contact page -->
+                </div>
+                <div class="c2">
+                    <div class="card2">
+                        <div class="text">
+                            <h3>Card 2</h3>
+                        </div>
+                    </div>
+                    <a href="{% static 'contact.html' %}" class="button">Click here</a>  <!-- Update link to contact page -->
+                </div>
+                <div class="c3">
+                    <div class="card3">
+                        <div class="text">
+                            <h3>Card 3</h3>
+                        </div>
+                    </div>
+                    <a href="{% static 'contact.html' %}" class="button">Click here</a>  <!-- Update link to contact page -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="review">
+            <img src="{% static 'pattern2.png' %}" alt="">  <!-- Update image source -->
+            <h2>REVIEW</h2>
+            <div class="line">.</div>
+            <div class="card">
+                <div class="card1">
+                    <div class="text">
+                        <h3>“Trashtack optimizes waste <br> management with real-time <br>data, reducing emissions and <br>supporting greener communities”</h3>
+                    </div>
+                    <div class="user">
+                        <h3>Abhishek Sharma</h3>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="text">
+                        <h3>“Trashtack optimizes waste <br> management with real-time <br>data, reducing emissions and <br>supporting greener communities”</h3>
+                    </div>
+                    <div class="user">
+                        <h3>Abhishek Sharma</h3>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="text">
+                        <h3>“Trashtack optimizes waste <br> management with real-time <br>data, reducing emissions and <br>supporting greener communities”</h3>
+                    </div>
+                    <div class="user">
+                        <h3>Abhishek Sharma</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="subscribe">
+        <h2>Stay up to <br>date with</h2>
+        <h1>TRASHTRACK</h1>
+        
+        <div class="sub"><a href="#">SUBSCRIBE</a></div>
+    </section>
+
+{% endblock content %}

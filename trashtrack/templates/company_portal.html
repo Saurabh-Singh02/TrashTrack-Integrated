@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Companies{% endblock title %}
+{% block content %}
+<section>
+    <h1>Company Portal</h1>
+    <div id="cont"><a id="cont" href="{% url 'company_signup' %}">Sign Up for Company Account</a></div><br>
+    <h2>Registered Companies</h2>
+    <div class="company-list">
+        {% for company in companies %}
+        <div class="company">
+            <h3>{{ company.name }}</h3>
+            <p>Contact Info: {{ company.contact_info }}</p>
+            <p>Registered At: {{ company.registered_at }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock content %}
+
+

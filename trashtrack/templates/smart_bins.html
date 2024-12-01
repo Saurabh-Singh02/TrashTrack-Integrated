@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Bin Monitoring{% endblock title %}
+{% block content %}
+<section>
+    <h1>Smart Bins</h1>
+    <h2>All Smart Bins</h2>
+    <div class="bins-list">
+        {% for bin in bins %}
+        <div class="bin">
+            <h3>Bin Type: {{ bin.bin_type }}</h3>
+            <p>Location: {{ bin.location }}</p>
+            <p>Current Fill Level: {{ bin.current_fill_level }}%</p>
+            <p>Detected Waste Type: {{ bin.detected_waste_type }}</p>
+            <p>Status: {{ bin.fill_status }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+{% endblock content %}
+
+
